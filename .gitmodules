@@ -16,3 +16,6 @@
 [submodule "custom_nodes/ComfyUI_InstantID"]
 	path = custom_nodes/ComfyUI_InstantID
 	url = https://github.com/cubiq/ComfyUI_InstantID.git
+[submodule "custom_nodes/ComfyUI_LayerStyle"]
+	path = custom_nodes/ComfyUI_LayerStyle
+	url = https://github.com/chflame163/ComfyUI_LayerStyle.git
