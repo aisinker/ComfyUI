@@ -25,3 +25,18 @@
 [submodule "custom_nodes/ComfyUI-Frame-Interpolation"]
 	path = custom_nodes/ComfyUI-Frame-Interpolation
 	url = https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git
+[submodule "custom_nodes/ComfyUI-Marigold"]
+	path = custom_nodes/ComfyUI-Marigold
+	url = https://github.com/kijai/ComfyUI-Marigold.git
+[submodule "custom_nodes/comfyui_controlnet_aux"]
+	path = custom_nodes/comfyui_controlnet_aux
+	url = https://github.com/Fannovel16/comfyui_controlnet_aux.git
+[submodule "custom_nodes/ComfyUI-Advanced-ControlNet"]
+	path = custom_nodes/ComfyUI-Advanced-ControlNet
+	url = https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
+[submodule "custom_nodes/ComfyUI-AnimateDiff-Evolved"]
+	path = custom_nodes/ComfyUI-AnimateDiff-Evolved
+	url = https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git
+[submodule "custom_nodes/efficiency-nodes-comfyui"]
+	path = custom_nodes/efficiency-nodes-comfyui
+	url = https://github.com/jags111/efficiency-nodes-comfyui.git
