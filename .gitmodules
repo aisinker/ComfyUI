@@ -40,3 +40,6 @@
 [submodule "custom_nodes/efficiency-nodes-comfyui"]
 	path = custom_nodes/efficiency-nodes-comfyui
 	url = https://github.com/jags111/efficiency-nodes-comfyui.git
+[submodule "custom_nodes/ComfyUI_IPAdapter_plus"]
+	path = custom_nodes/ComfyUI_IPAdapter_plus
+	url = https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
