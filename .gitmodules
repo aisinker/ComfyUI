@@ -49,3 +49,6 @@
 [submodule "custom_nodes/comfyui_segment_anything"]
 	path = custom_nodes/comfyui_segment_anything
 	url = https://github.com/storyicon/comfyui_segment_anything.git
+[submodule "custom_nodes/comfyui-prompt-reader-node"]
+	path = custom_nodes/comfyui-prompt-reader-node
+	url = https://github.com/receyuki/comfyui-prompt-reader-node.git
