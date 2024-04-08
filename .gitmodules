@@ -52,3 +52,6 @@
 [submodule "custom_nodes/comfyui-prompt-reader-node"]
 	path = custom_nodes/comfyui-prompt-reader-node
 	url = https://github.com/receyuki/comfyui-prompt-reader-node.git
+[submodule "custom_nodes/OneButtonPrompt"]
+	path = custom_nodes/OneButtonPrompt
+	url = https://github.com/AIrjen/OneButtonPrompt.git
