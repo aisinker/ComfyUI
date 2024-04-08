@@ -151,60 +151,6 @@
       ]
     },
     {
-      "id": 80,
-      "type": "Control Net Stacker",
-      "pos": [
-        972.9401538085917,
-        -474.4192041015632
-      ],
-      "size": {
-        "0": 417.4063415527344,
-        "1": 150.52952575683594
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 86
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 151
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            84
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
-      ],
-      "color": "#223322",
-      "bgcolor": "#335533",
-      "shape": 1
-    },
-    {
       "id": 86,
       "type": "ControlNetLoader",
       "pos": [
@@ -267,114 +213,6 @@
       "widgets_values": [
         "t2i-adapter-depth-midas-sdxl-1.0.safetensors"
       ]
-    },
-    {
-      "id": 76,
-      "type": "Control Net Stacker",
-      "pos": [
-        970.9401538085917,
-        -165.4192041015626
-      ],
-      "size": {
-        "0": 423.66552734375,
-        "1": 166.82778930664062
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 87
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 148
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": 84
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            133
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
-      ],
-      "color": "#223322",
-      "bgcolor": "#335533",
-      "shape": 1
-    },
-    {
-      "id": 87,
-      "type": "Control Net Stacker",
-      "pos": [
-        975.9401538085917,
-        164.5807958984375
-      ],
-      "size": {
-        "0": 419.5693359375,
-        "1": 158.4063720703125
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 92
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 98
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": 133
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            128
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
-      ],
-      "color": "#223322",
-      "bgcolor": "#335533",
-      "shape": 1
     },
     {
       "id": 120,
@@ -1066,7 +904,7 @@
         "Node name for S&R": "KSampler (Efficient)"
       },
       "widgets_values": [
-        -1,
+        252883788737421,
         null,
         60,
         7,
@@ -1160,7 +998,7 @@
       },
       "widgets_values": [
         "",
-        ", worst quality, low quality, normal quality, low details, oversaturated, undersaturated, overexposed, underexposed, bw, bad photo, bad photography, bad art, signature, text font, username, error, logo, letters, digits, autograph, trademark, name, blurry, grainy, ugly, poorly lit, bad shadow, draft, cropped, out of frame, censored, jpeg artifacts, out of focus, glitch, duplicate, text, watermark, SFW"
+        ", worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art, watermark, signature, text font, error, logo, words, letters, digits, autograph, trademark, name, blur, blurry, grainy, ugly, poorly lit, bad shadow, draft, cropped, out of frame, cut off, censored, jpeg artifacts, out of focus, glitch, duplicate, text, watermark, SFW"
       ]
     },
     {
@@ -1209,7 +1047,7 @@
         1,
         1,
         "SDXL",
-        409397615444302,
+        199547603276966,
         "randomize"
       ]
     },
@@ -1675,6 +1513,168 @@
       ],
       "color": "#222233",
       "bgcolor": "#333355",
+      "shape": 1
+    },
+    {
+      "id": 80,
+      "type": "Control Net Stacker",
+      "pos": [
+        972.9401538085917,
+        -474.4192041015632
+      ],
+      "size": {
+        "0": 417.4063415527344,
+        "1": 150.52952575683594
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 86
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 151
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            84
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
+      "shape": 1
+    },
+    {
+      "id": 76,
+      "type": "Control Net Stacker",
+      "pos": [
+        970.9401538085917,
+        -165.4192041015626
+      ],
+      "size": {
+        "0": 423.66552734375,
+        "1": 166.82778930664062
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 87
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 148
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": 84
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            133
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
+      "shape": 1
+    },
+    {
+      "id": 87,
+      "type": "Control Net Stacker",
+      "pos": [
+        975.9401538085917,
+        164.5807958984375
+      ],
+      "size": {
+        "0": 419.5693359375,
+        "1": 158.4063720703125
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 92
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 98
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": 133
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            128
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
       "shape": 1
     }
   ],
