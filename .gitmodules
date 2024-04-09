@@ -61,3 +61,6 @@
 [submodule "custom_nodes/ComfyUI-Crystools"]
 	path = custom_nodes/ComfyUI-Crystools
 	url = https://github.com/crystian/ComfyUI-Crystools.git
+[submodule "custom_nodes/comfyui-portrait-master"]
+	path = custom_nodes/comfyui-portrait-master
+	url = https://github.com/florestefano1975/comfyui-portrait-master.git
