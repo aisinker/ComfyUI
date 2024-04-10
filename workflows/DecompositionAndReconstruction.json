@@ -1,6 +1,6 @@
 {
   "last_node_id": 156,
-  "last_link_id": 218,
+  "last_link_id": 222,
   "nodes": [
     {
       "id": 25,
@@ -264,94 +264,6 @@
       ]
     },
     {
-      "id": 11,
-      "type": "CLIPTextEncode",
-      "pos": [
-        1213.9968886122465,
-        828.4616800633595
-      ],
-      "size": {
-        "0": 210,
-        "1": 54
-      },
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 114
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 105,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            118
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "2girls, 2boys, multiple_girls, multiple_boys, NSFW"
-      ]
-    },
-    {
-      "id": 107,
-      "type": "ConditioningCombine",
-      "pos": [
-        2176.3021451171867,
-        600.6410566406252
-      ],
-      "size": {
-        "0": 228.39999389648438,
-        "1": 52.2553596496582
-      },
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning_1",
-          "type": "CONDITIONING",
-          "link": 117
-        },
-        {
-          "name": "conditioning_2",
-          "type": "CONDITIONING",
-          "link": 118
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            160
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ConditioningCombine"
-      }
-    },
-    {
       "id": 80,
       "type": "Control Net Stacker",
       "pos": [
@@ -514,47 +426,6 @@
       "shape": 1
     },
     {
-      "id": 106,
-      "type": "ConditioningCombine",
-      "pos": [
-        2177.3021451171867,
-        462.64105664062487
-      ],
-      "size": {
-        "0": 228.39999389648438,
-        "1": 49.79978942871094
-      },
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning_1",
-          "type": "CONDITIONING",
-          "link": 161
-        },
-        {
-          "name": "conditioning_2",
-          "type": "CONDITIONING",
-          "link": 162
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            159
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ConditioningCombine"
-      }
-    },
-    {
       "id": 116,
       "type": "IPAdapter",
       "pos": [
@@ -566,7 +437,7 @@
         "1": 190
       },
       "flags": {},
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -805,7 +676,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 40,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -841,7 +712,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 45,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -866,7 +737,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 42,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -891,7 +762,7 @@
         "1": 562
       },
       "flags": {},
-      "order": 33,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -902,12 +773,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 159
+          "link": 222
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 160
+          "link": 221
         },
         {
           "name": "latent_image",
@@ -1012,7 +883,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 36,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1037,7 +908,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 39,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -1062,7 +933,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 38,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1166,7 +1037,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 41,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1206,7 +1077,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 37,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1242,7 +1113,7 @@
         "1": 122
       },
       "flags": {},
-      "order": 34,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1367,7 +1238,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 44,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1408,7 +1279,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 43,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -1444,7 +1315,7 @@
         "1": 266
       },
       "flags": {},
-      "order": 35,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1683,57 +1554,7 @@
       },
       "widgets_values": [
         "",
-        "simple, plain, abstract, unrealistic, impressionistic, low resolution, surrealism, sad, dark, moody, text, watermark, SFW, glasses"
-      ]
-    },
-    {
-      "id": 95,
-      "type": "AutoNegativePrompt",
-      "pos": [
-        753.9201327087399,
-        845.4541897460931
-      ],
-      "size": {
-        "0": 400,
-        "1": 246
-      },
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "postive_prompt",
-          "type": "STRING",
-          "link": 164,
-          "widget": {
-            "name": "postive_prompt"
-          },
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "negative_prompt",
-          "type": "STRING",
-          "links": [
-            105,
-            165
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "AutoNegativePrompt"
-      },
-      "widgets_values": [
-        "",
-        "text, watermark, SFW, glasses",
-        2,
-        1,
-        "SDXL",
-        1084553827843242,
-        "randomize"
+        "sad, dark, moody, simple, plain, abstract, unrealistic, impressionistic, low resolution, surrealism, text, watermark, SFW, glasses"
       ]
     },
     {
@@ -1772,113 +1593,6 @@
       },
       "widgets_values": [
         " NSFW, very_long_hair, "
-      ]
-    },
-    {
-      "id": 10,
-      "type": "CLIPTextEncode",
-      "pos": [
-        1212.9201327087435,
-        689.4541897460928
-      ],
-      "size": {
-        "0": 210,
-        "1": 54
-      },
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 113
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 109,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            162
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "1girl, very_long_hair, black_hair, full_body, school_uniform, long_sleeves, hairband, black_skirt, miniskirt, white_uniform,realistic, photorealistic, hair_between_eyes, blunt_bangs, large_breasts,partially_fingerless_gloves, ,long_legs,sitting_on_bed,looking_at_viewer,single_shoe,jk, leather shoes,japanese_clothes, red_eyes, SFW,stockings"
-      ]
-    },
-    {
-      "id": 101,
-      "type": "CR Text Concatenate",
-      "pos": [
-        791.9201327087397,
-        653.4541897460929
-      ],
-      "size": {
-        "0": 315,
-        "1": 126
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text1",
-          "type": "STRING",
-          "link": 110,
-          "widget": {
-            "name": "text1"
-          },
-          "slot_index": 0
-        },
-        {
-          "name": "text2",
-          "type": "STRING",
-          "link": 111,
-          "widget": {
-            "name": "text2"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "*",
-          "links": [
-            109,
-            163
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Text Concatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        ","
       ]
     },
     {
@@ -2121,117 +1835,6 @@
       "shape": 1
     },
     {
-      "id": 94,
-      "type": "Efficient Loader",
-      "pos": [
-        1684.3021451171867,
-        442.64105664062487
-      ],
-      "size": {
-        "0": 400,
-        "1": 462
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "link": 156
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": 128
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            168
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CONDITIONING+",
-          "type": "CONDITIONING",
-          "links": [
-            161
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "CONDITIONING-",
-          "type": "CONDITIONING",
-          "links": [
-            117
-          ],
-          "shape": 3,
-          "slot_index": 2
-        },
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            120
-          ],
-          "shape": 3,
-          "slot_index": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            139
-          ],
-          "shape": 3,
-          "slot_index": 4
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            113,
-            114
-          ],
-          "shape": 3,
-          "slot_index": 5
-        },
-        {
-          "name": "DEPENDENCIES",
-          "type": "DEPENDENCIES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Efficient Loader"
-      },
-      "widgets_values": [
-        "4Guofeng4XL_v12.safetensors",
-        "Baked VAE",
-        -2,
-        "None",
-        1,
-        1,
-        "",
-        "",
-        "none",
-        "comfy",
-        1024,
-        1024,
-        1
-      ],
-      "color": "#332233",
-      "bgcolor": "#553355",
-      "shape": 1
-    },
-    {
       "id": 131,
       "type": "KSampler (Efficient)",
       "pos": [
@@ -2243,7 +1846,7 @@
         "1": 562.0000610351562
       },
       "flags": {},
-      "order": 46,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -2336,6 +1939,240 @@
       "color": "#2a363b",
       "bgcolor": "#3f5159",
       "shape": 1
+    },
+    {
+      "id": 94,
+      "type": "Efficient Loader",
+      "pos": [
+        1684,
+        443
+      ],
+      "size": [
+        400,
+        462
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 156
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": 128
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 219,
+          "widget": {
+            "name": "positive"
+          }
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 220,
+          "widget": {
+            "name": "negative"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            168
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            222
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            221
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            120
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "4Guofeng4XL_v12.safetensors",
+        "Baked VAE",
+        -2,
+        "None",
+        1,
+        1,
+        "",
+        "",
+        "none",
+        "comfy",
+        1024,
+        1024,
+        1
+      ],
+      "color": "#332233",
+      "bgcolor": "#553355",
+      "shape": 1
+    },
+    {
+      "id": 101,
+      "type": "CR Text Concatenate",
+      "pos": [
+        791.9201327087397,
+        653.4541897460929
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 110,
+          "widget": {
+            "name": "text1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 111,
+          "widget": {
+            "name": "text2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            163,
+            219
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ","
+      ]
+    },
+    {
+      "id": 95,
+      "type": "AutoNegativePrompt",
+      "pos": [
+        753.9201327087399,
+        845.4541897460931
+      ],
+      "size": {
+        "0": 400,
+        "1": 246
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "postive_prompt",
+          "type": "STRING",
+          "link": 164,
+          "widget": {
+            "name": "postive_prompt"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "links": [
+            165,
+            220
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AutoNegativePrompt"
+      },
+      "widgets_values": [
+        "",
+        "text, watermark, SFW, glasses",
+        2,
+        1,
+        "SDXL",
+        978686715001693,
+        "randomize"
+      ]
     }
   ],
   "links": [
@@ -2396,22 +2233,6 @@
       "IMAGE"
     ],
     [
-      105,
-      95,
-      0,
-      11,
-      1,
-      "STRING"
-    ],
-    [
-      109,
-      101,
-      0,
-      10,
-      1,
-      "STRING"
-    ],
-    [
       110,
       90,
       0,
@@ -2426,38 +2247,6 @@
       101,
       1,
       "STRING"
-    ],
-    [
-      113,
-      94,
-      5,
-      10,
-      0,
-      "CLIP"
-    ],
-    [
-      114,
-      94,
-      5,
-      11,
-      0,
-      "CLIP"
-    ],
-    [
-      117,
-      94,
-      2,
-      107,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      118,
-      11,
-      0,
-      107,
-      1,
-      "CONDITIONING"
     ],
     [
       120,
@@ -2578,38 +2367,6 @@
       94,
       0,
       "LORA_STACK"
-    ],
-    [
-      159,
-      106,
-      0,
-      17,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      160,
-      107,
-      0,
-      17,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      161,
-      94,
-      1,
-      106,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      162,
-      10,
-      0,
-      106,
-      1,
-      "CONDITIONING"
     ],
     [
       163,
@@ -2866,6 +2623,38 @@
       131,
       3,
       "LATENT"
+    ],
+    [
+      219,
+      101,
+      0,
+      94,
+      2,
+      "STRING"
+    ],
+    [
+      220,
+      95,
+      0,
+      94,
+      3,
+      "STRING"
+    ],
+    [
+      221,
+      94,
+      2,
+      17,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      222,
+      94,
+      1,
+      17,
+      1,
+      "CONDITIONING"
     ]
   ],
   "groups": [
