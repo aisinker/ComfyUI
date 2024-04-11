@@ -1,20 +1,20 @@
 {
   "last_node_id": 156,
-  "last_link_id": 222,
+  "last_link_id": 224,
   "nodes": [
     {
       "id": 25,
       "type": "PreviewImage",
       "pos": [
-        628.7447711429018,
-        -963.3087089183417
+        626.1446917971982,
+        -466.7090873363101
       ],
       "size": {
         "0": 287.00732421875,
         "1": 358.26910400390625
       },
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -56,8 +56,8 @@
       "id": 45,
       "type": "PreviewImage",
       "pos": [
-        631.0863078302676,
-        -505.1091661711342
+        629.0863078302676,
+        -961.1091661711341
       ],
       "size": {
         "0": 282.1927490234375,
@@ -78,107 +78,11 @@
       }
     },
     {
-      "id": 81,
-      "type": "ControlNetLoader",
-      "pos": [
-        971.5195045898427,
-        -576.6188965820318
-      ],
-      "size": {
-        "0": 413.8984375,
-        "1": 58
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            86
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "t2i-adapter-openpose-sdxl-1.0.safetensors"
-      ]
-    },
-    {
-      "id": 86,
-      "type": "ControlNetLoader",
-      "pos": [
-        974.9401538085917,
-        50.580795898437444
-      ],
-      "size": {
-        "0": 421.5693359375,
-        "1": 64.4063720703125
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            92
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "t2i-adapter-canny-sdxl-1.0.safetensors"
-      ]
-    },
-    {
-      "id": 82,
-      "type": "ControlNetLoader",
-      "pos": [
-        970.9401538085917,
-        -279.419204101563
-      ],
-      "size": {
-        "0": 424.9142150878906,
-        "1": 74.47542572021484
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            87
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "t2i-adapter-depth-midas-sdxl-1.0.safetensors"
-      ]
-    },
-    {
       "id": 120,
       "type": "OpenposePreprocessor",
       "pos": [
-        275.5800085449219,
-        -761.5642968750001
+        272.97992919921865,
+        -264.9646752929687
       ],
       "size": {
         "0": 315,
@@ -226,8 +130,8 @@
       "id": 118,
       "type": "DepthAnythingPreprocessor",
       "pos": [
-        277,
-        -201
+        275,
+        -657
       ],
       "size": {
         "0": 315,
@@ -264,114 +168,6 @@
       ]
     },
     {
-      "id": 80,
-      "type": "Control Net Stacker",
-      "pos": [
-        972.9401538085917,
-        -474.4192041015632
-      ],
-      "size": {
-        "0": 417.4063415527344,
-        "1": 150.52952575683594
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 86
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 151
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            84
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        0.5,
-        0,
-        1
-      ],
-      "color": "#223322",
-      "bgcolor": "#335533",
-      "shape": 1
-    },
-    {
-      "id": 76,
-      "type": "Control Net Stacker",
-      "pos": [
-        970.9401538085917,
-        -165.4192041015626
-      ],
-      "size": {
-        "0": 423.66552734375,
-        "1": 166.82778930664062
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 87
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 148
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": 84
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            133
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        0.5,
-        0,
-        1
-      ],
-      "color": "#223322",
-      "bgcolor": "#335533",
-      "shape": 1
-    },
-    {
       "id": 87,
       "type": "Control Net Stacker",
       "pos": [
@@ -399,7 +195,7 @@
         {
           "name": "cnet_stack",
           "type": "CONTROL_NET_STACK",
-          "link": 133
+          "link": 224
         }
       ],
       "outputs": [
@@ -931,7 +727,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 3,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -962,7 +758,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 4,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -1131,7 +927,7 @@
         "1": 80.99604797363281
       },
       "flags": {},
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -1162,7 +958,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 6,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -1373,7 +1169,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 7,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -1487,7 +1283,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 8,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -1525,7 +1321,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1964,7 +1760,7 @@
         2,
         1,
         "SDXL",
-        730459016904676,
+        928008713707613,
         "randomize"
       ]
     },
@@ -1980,7 +1776,7 @@
         "1": 378.5057067871094
       },
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -2019,7 +1815,7 @@
         "1": 619.6249389648438
       },
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -2173,6 +1969,210 @@
       "color": "#332233",
       "bgcolor": "#553355",
       "shape": 1
+    },
+    {
+      "id": 82,
+      "type": "ControlNetLoader",
+      "pos": [
+        969,
+        -637
+      ],
+      "size": {
+        "0": 424.9142150878906,
+        "1": 74.47542572021484
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            87
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "t2i-adapter-depth-midas-sdxl-1.0.safetensors"
+      ]
+    },
+    {
+      "id": 80,
+      "type": "Control Net Stacker",
+      "pos": [
+        972,
+        -166
+      ],
+      "size": {
+        "0": 417.4063415527344,
+        "1": 150.52952575683594
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 86
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 151
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": 223
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            224
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
+      "shape": 1
+    },
+    {
+      "id": 76,
+      "type": "Control Net Stacker",
+      "pos": [
+        969,
+        -506
+      ],
+      "size": {
+        "0": 423.66552734375,
+        "1": 166.82778930664062
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 87
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 148
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            223
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
+      "shape": 1
+    },
+    {
+      "id": 81,
+      "type": "ControlNetLoader",
+      "pos": [
+        975,
+        -287
+      ],
+      "size": {
+        "0": 413.8984375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            86
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "t2i-adapter-openpose-sdxl-1.0.safetensors"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "ControlNetLoader",
+      "pos": [
+        972,
+        40
+      ],
+      "size": {
+        "0": 421.5693359375,
+        "1": 64.4063720703125
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            92
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "t2i-adapter-canny-sdxl-1.0.safetensors"
+      ]
     }
   ],
   "links": [
@@ -2183,14 +2183,6 @@
       53,
       0,
       "IMAGE"
-    ],
-    [
-      84,
-      80,
-      0,
-      76,
-      2,
-      "CONTROL_NET_STACK"
     ],
     [
       86,
@@ -2262,14 +2254,6 @@
       0,
       94,
       1,
-      "CONTROL_NET_STACK"
-    ],
-    [
-      133,
-      76,
-      0,
-      87,
-      2,
       "CONTROL_NET_STACK"
     ],
     [
@@ -2655,14 +2639,30 @@
       17,
       1,
       "CONDITIONING"
+    ],
+    [
+      223,
+      76,
+      0,
+      80,
+      2,
+      "CONTROL_NET_STACK"
+    ],
+    [
+      224,
+      80,
+      0,
+      87,
+      2,
+      "CONTROL_NET_STACK"
     ]
   ],
   "groups": [
     {
       "title": "姿态",
       "bounding": [
-        266,
-        -1037,
+        263,
+        -540,
         660,
         442
       ],
@@ -2673,8 +2673,8 @@
     {
       "title": "深度",
       "bounding": [
-        267,
-        -579,
+        265,
+        -1035,
         656,
         474
       ],
@@ -2697,10 +2697,10 @@
     {
       "title": "ControlNet Stack",
       "bounding": [
-        961,
-        -650,
-        446,
-        984
+        959,
+        -711,
+        447,
+        1044
       ],
       "color": "#3f789e",
       "font_size": 24,
