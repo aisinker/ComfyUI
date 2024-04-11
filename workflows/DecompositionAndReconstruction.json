@@ -577,7 +577,7 @@
         false,
         false,
         "",
-        "1girl, solo, long_hair, smile, bangs, black_hair, thighhighs, dress, bow, standing, full_body, hair_bow, outdoors, shoes, day, white_dress, blurry, arms_up, white_thighhighs, blurry_background, white_footwear, outstretched_arms, white_bow, realistic"
+        "1girl, solo, long_hair, bangs, skirt, shirt, black_hair, thighhighs, bow, animal_ears, twintails, jewelry, standing, full_body, glasses, indoors, necklace, black_footwear, black_eyes, black_shirt, sandals, white_skirt, cross, single_thighhigh, asymmetrical_legwear, round_eyewear"
       ]
     },
     {
@@ -619,49 +619,6 @@
       "widgets_values": [
         0.15,
         0.2
-      ]
-    },
-    {
-      "id": 93,
-      "type": "LoadImage",
-      "pos": [
-        -326,
-        413
-      ],
-      "size": {
-        "0": 498.82415771484375,
-        "1": 619.6249389648438
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            103,
-            152,
-            153,
-            154,
-            155
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "PixPin_2024-04-09_20-21-36 (3).png",
-        "image"
       ]
     },
     {
@@ -974,7 +931,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -1005,7 +962,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -1174,7 +1131,7 @@
         "1": 80.99604797363281
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -1205,7 +1162,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1416,7 +1373,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1433,45 +1390,6 @@
       },
       "widgets_values": [
         "CPU"
-      ]
-    },
-    {
-      "id": 2,
-      "type": "LoadImage",
-      "pos": [
-        -312,
-        -43
-      ],
-      "size": {
-        "0": 466.8269958496094,
-        "1": 378.5057067871094
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            185
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "PixPin_2024-04-08_21-29-32 (4).png",
-        "image"
       ]
     },
     {
@@ -1514,7 +1432,7 @@
       },
       "widgets_values": [
         "",
-        "1girl, solo, long_hair, smile, bangs, black_hair, thighhighs, dress, bow, standing, full_body, hair_bow, outdoors, shoes, day, white_dress, blurry, arms_up, white_thighhighs, blurry_background, white_footwear, outstretched_arms, white_bow, realistic, NSFW, very_long_hair, "
+        "1girl, solo, long_hair, bangs, skirt, shirt, black_hair, thighhighs, bow, animal_ears, twintails, jewelry, standing, full_body, glasses, indoors, necklace, black_footwear, black_eyes, black_shirt, sandals, white_skirt, cross, single_thighhigh, asymmetrical_legwear, round_eyewear, NSFW, very_long_hair, "
       ]
     },
     {
@@ -1554,7 +1472,7 @@
       },
       "widgets_values": [
         "",
-        "sad, dark, moody, simple, plain, abstract, unrealistic, impressionistic, low resolution, surrealism, text, watermark, SFW, glasses"
+        ", text, watermark, SFW, glasses"
       ]
     },
     {
@@ -1569,7 +1487,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -1607,7 +1525,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1941,130 +1859,6 @@
       "shape": 1
     },
     {
-      "id": 94,
-      "type": "Efficient Loader",
-      "pos": [
-        1684,
-        443
-      ],
-      "size": [
-        400,
-        462
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "link": 156
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": 128
-        },
-        {
-          "name": "positive",
-          "type": "STRING",
-          "link": 219,
-          "widget": {
-            "name": "positive"
-          }
-        },
-        {
-          "name": "negative",
-          "type": "STRING",
-          "link": 220,
-          "widget": {
-            "name": "negative"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            168
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CONDITIONING+",
-          "type": "CONDITIONING",
-          "links": [
-            222
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "CONDITIONING-",
-          "type": "CONDITIONING",
-          "links": [
-            221
-          ],
-          "shape": 3,
-          "slot_index": 2
-        },
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            120
-          ],
-          "shape": 3,
-          "slot_index": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            139
-          ],
-          "shape": 3,
-          "slot_index": 4
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [],
-          "shape": 3,
-          "slot_index": 5
-        },
-        {
-          "name": "DEPENDENCIES",
-          "type": "DEPENDENCIES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Efficient Loader"
-      },
-      "widgets_values": [
-        "4Guofeng4XL_v12.safetensors",
-        "Baked VAE",
-        -2,
-        "None",
-        1,
-        1,
-        "",
-        "",
-        "none",
-        "comfy",
-        1024,
-        1024,
-        1
-      ],
-      "color": "#332233",
-      "bgcolor": "#553355",
-      "shape": 1
-    },
-    {
       "id": 101,
       "type": "CR Text Concatenate",
       "pos": [
@@ -2170,9 +1964,215 @@
         2,
         1,
         "SDXL",
-        978686715001693,
+        730459016904676,
         "randomize"
       ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -312,
+        -43
+      ],
+      "size": {
+        "0": 466.8269958496094,
+        "1": 378.5057067871094
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            185
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "PixPin_2024-04-08_21-44-56 (8).png",
+        "image"
+      ]
+    },
+    {
+      "id": 93,
+      "type": "LoadImage",
+      "pos": [
+        -326,
+        413
+      ],
+      "size": {
+        "0": 498.82415771484375,
+        "1": 619.6249389648438
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            103,
+            152,
+            153,
+            154,
+            155
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "PixPin_2024-04-08_22-13-42 (6).png",
+        "image"
+      ]
+    },
+    {
+      "id": 94,
+      "type": "Efficient Loader",
+      "pos": [
+        1684,
+        443
+      ],
+      "size": {
+        "0": 400,
+        "1": 462
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 156
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": 128
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 219,
+          "widget": {
+            "name": "positive"
+          }
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 220,
+          "widget": {
+            "name": "negative"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            168
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            222
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            221
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            120
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "4Guofeng4XL_v12.safetensors",
+        "Baked VAE",
+        -2,
+        "None",
+        1,
+        1,
+        "",
+        "",
+        "none",
+        "comfy",
+        768,
+        1408,
+        1
+      ],
+      "color": "#332233",
+      "bgcolor": "#553355",
+      "shape": 1
     }
   ],
   "links": [
