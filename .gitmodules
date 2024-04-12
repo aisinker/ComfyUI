@@ -64,3 +64,12 @@
 [submodule "custom_nodes/comfyui-portrait-master"]
 	path = custom_nodes/comfyui-portrait-master
 	url = https://github.com/florestefano1975/comfyui-portrait-master.git
+[submodule "custom_nodes/comfyui-inpaint-nodes"]
+	path = custom_nodes/comfyui-inpaint-nodes
+	url = https://github.com/Acly/comfyui-inpaint-nodes.git
+[submodule "custom_nodes/comfyui-tooling-nodes"]
+	path = custom_nodes/comfyui-tooling-nodes
+	url = https://github.com/Acly/comfyui-tooling-nodes.git
+[submodule "custom_nodes/ComfyUI_UltimateSDUpscale"]
+	path = custom_nodes/ComfyUI_UltimateSDUpscale
+	url = https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
